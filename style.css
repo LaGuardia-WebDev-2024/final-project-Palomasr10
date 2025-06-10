@@ -4,6 +4,7 @@ body {
   padding-top: 30px;
   margin-left: 0px;
   margin-right: 0px;
+  background-color: rgb(255, 229, 105);
 }
 /* ⬆⬆⬆⬆ Nav Bar Styling 
 ~~~~~ Taken From: 
@@ -13,7 +14,7 @@ ul.nav {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333333;
+  background-color: rgb(219, 0, 91);
   position: fixed;
   top: 0;
   width: 100%;
@@ -33,13 +34,42 @@ ul.nav li a {
 }
 
 ul.nav li a:hover:not(.active) {
-  background-color: yellow;
-}
-
-ul.nav .active {
-  background-color: red;
+  background-color: rgb(180,2,2);
 }
 
 h1 {
   width: 100%;
+  color: rgb(247, 147, 39);
+}
+
+.textblock parent-flex {
+  background-color: rgb(255, 229, 105);
+}
+
+#brief {
+  color: rgb(255, 229, 105);
+  font-family: "Calligraffitti", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+}
+
+#cover {
+  border: 6px solid;
+  border-color: rgb(255, 229, 105);
+}
+
+#title {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+}
+
+
+.menu {
+  font-family: "Bodoni Moda SC", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
 }

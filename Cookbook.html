@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Calligraffitti&family=Fascinate&family=Fascinate+Inline&family=Pacifico&family=Pattaya&family=Style+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Barriecito&family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Calligraffitti&family=Fascinate&family=Fascinate+Inline&family=Monofett&family=Mountains+of+Christmas:wght@400;700&family=Pacifico&family=Pattaya&family=Style+Script&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Barriecito&family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Calligraffitti&family=DynaPuff:wght@400..700&family=Fascinate&family=Fascinate+Inline&family=Monofett&family=Mountains+of+Christmas:wght@400;700&family=Pacifico&family=Pattaya&family=Style+Script&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="utf-8" />
+    <title>Final Project</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+      /* Styling Only Related To THIS Page */
+      .parent-flex {
+        display: flex;
+        /*         justify-content: center; */
+        background-color: rgb(214, 8, 117);
+        justify-content: start;
+        padding: 10px;
+        margin-bottom: 20px;
+      }
+
+      .parent-flex img {
+        /*         max-width: 30%; */
+        border-radius: 10px;
+        /*object-fit: contain;*/
+      }
+
+      .nav {
+        font-family: "Bodoni Moda SC", serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+      }
+
+      .mini-div {
+        display: flex;
+        flex-direction: right;
+        margin-left: 40px;
+      }
+
+      p {
+        font-size: 20px;
+        color: rgb(232, 206, 17);
+        font-family: "DynaPuff", system-ui;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+      }
+
+      body {
+        background-color: rgb(103, 176, 113);
+      }
+
+      h1 {
+        color: rgb(232, 206, 17);
+        font-family: "Barriecito", system-ui;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      .little-div {
+        display: flex;
+        flex-direction: right;
+        margin-left: 130px;
+      }
+
+      #name2 {
+        display: flex;
+        justify-content: start;
+        flex-direction: down;
+        margin-top: 210px;
+        margin-left: -110px;
+      }
+
+      #name {
+        display: flex;
+        justify-content: start;
+        flex-direction: down;
+        margin-top: 240px;
+        margin-left: -110px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ⬆⬆⬆⬆ Nav Bar -->
+    <ul class="nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="cookbook.html">Cooking Origins</a></li>
+      <li>
+        <a class="active" href="CookingOrigins.html">Selected Cookbook</a>
+      </li>
+      <li><a href="Gallery.html">Food Gallery</a></li>
+      <li style="float: right">
+        <a target="_blank" href=""
+          ><img
+            src="https://www.getfocused.no/wp-content/uploads/2022/09/White-YouTube-Logo-Transparent.png"
+            style="width: 25px; margin: -5px"
+        /></a>
+      </li>
+      <li style="float: right">
+        <a target="_blank" href=""
+          ><img
+            src="https://img.icons8.com/win10/512/FFFFFF/instagram-new.png"
+            style="width: 25px; margin: -5px"
+        /></a>
+      </li>
+    </ul>
+    <!-- ⬇⬇⬇⬇⬇⬇ Main Page Content -->
+    <h1>Cooking Origins</h1>
+
+    <div class="parent-flex">
+      <img
+        src="https://cdn.glitch.global/2d8714f2-3a02-4d41-8e99-b4bb7d6f29dd/6a59bb2c-2bed-433b-b2a6-30970f0a5b00.jpg?v=1748881282970"
+        width="150"
+        height="250"
+      />
+
+      <div id="name">
+        <p>Mauricio (age 6)</p>
+      </div>
+
+      <div class="mini-div">
+        <img
+          src="https://cdn.glitch.global/2d8714f2-3a02-4d41-8e99-b4bb7d6f29dd/Screenshot%202025-06-09%20at%209.47.01%E2%80%AFPM.png?v=1749520121926"
+          width="150"
+          height="200"
+        />
+      </div>
+
+      <div>
+        <p id="name2">Liza Backal</p>
+      </div>
+
+      <div class="little-div">
+        <p>
+          Mauricio learned to cook by watching his grandmother, Liza, who cooked
+          for his family every weekend. She herself learned to cook from her
+          mother, and being the eldest daughter she helped cook for her family
+          constantly. She could make almost any dish. It wasn't until Mauricio
+          was older and away from home that he began using the skills he
+          had absorbed from watching his grandmother so often, and that is where
+          he began his cooking journey and truly began to love to cook and hone
+          his craft.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
