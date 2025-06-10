@@ -1,12 +1,12 @@
 <!-- Final Project
 Requirements
-[  ] Customized HTML Page #1
-[  ] Customized HTML Page #2 
-[  ] Customized HTML Page #3
-[  ] Customized HTML Page #4
+[yes] Customized HTML Page #1
+[yes] Customized HTML Page #2 
+[yes] Customized HTML Page #3
+[yes] Customized HTML Page #4
 
 Select ONE Additional Feature to Add  
-[ no ] Feature 1 - Google Font
+[yes] Feature 1 - Google Font
 [ no ] Feature 2 - Upload a Font
 [ no ] Feature 3 - Include jQuery
 [ no ] Feature 4 - Embed Code from Spotify/Google Docs/YouTube
@@ -15,6 +15,24 @@ Select ONE Additional Feature to Add
 
 <!DOCTYPE html>
 <html>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alata&family=Calligraffitti&family=Fascinate&family=Fascinate+Inline&family=Pacifico&family=Style+Script&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alata&family=Calligraffitti&family=Fascinate&family=Fascinate+Inline&family=Pacifico&family=Pattaya&family=Style+Script&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alata&family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Calligraffitti&family=Fascinate&family=Fascinate+Inline&family=Pacifico&family=Pattaya&family=Style+Script&display=swap"
+    rel="stylesheet"
+  />
   <head>
     <meta charset="utf-8" />
     <title>Final Project</title>
@@ -25,10 +43,10 @@ Select ONE Additional Feature to Add
       https://www.w3schools.com/howto/howto_css_parallax.asp*/
       .parallax {
         /* The image used */
-        background-image: url("https://cdn.glitch.global/66249578-345e-4e9c-8fac-cabe98f682e4/image0.jpeg?v=1747657278943");
+        background-image: url("https://cdn.glitch.global/2d8714f2-3a02-4d41-8e99-b4bb7d6f29dd/4f1754a1-a65e-434e-8a6e-eaaf825ce366.jpg?v=1747844061260");
 
         /* Set a specific height */
-        min-height: 500px;
+        min-height: 550px;
 
         /* Create the parallax scrolling effect */
         background-attachment: fixed;
@@ -37,33 +55,36 @@ Select ONE Additional Feature to Add
         background-size: cover;
       }
       .textblock {
-        min-height: 500px;
-        background-color: black;
+        min-height: 350px;
+        background-color: rgb(255, 229, 105);
         color: white;
       }
       .parent-flex {
         display: flex;
       }
       .child-flex {
-        background-color: green;
-        margin: 30px;
+        background-color: rgb(247, 147, 39);
+        margin: 60px;
         padding: 10px;
         text-align: justify;
         width: 40%;
       }
-      .para-1{
+      .para-1 {
         display: flex;
         align-items: center;
+      }
+      .test {
+        text-align: center;
       }
     </style>
   </head>
   <body>
     <!-- ⬆⬆⬆⬆ Nav Bar -->
     <ul class="nav">
-      <li><a class="active" href="index.html">Home</a></li>
-      <li><a href="aboutme.html">About Me</a></li>
-      <li><a href="art.html">Art</a></li>
-      <li><a href="resume.html">Resume</a></li>
+      <li><a class="menu" href="index.html">Home</a></li>
+      <li><a class="menu" href="Cookbook.html">Cooking Origins</a></li>
+      <li><a class="menu" href="CookingOrigins.html">Selected Cookbook</a></li>
+      <li><a class="menu" href="Gallery.html">Food Gallery</a></li>
       <li style="float: right">
         <a target="_blank" href=""
           ><img
@@ -81,31 +102,24 @@ Select ONE Additional Feature to Add
     </ul>
 
     <!-- ⬇⬇⬇⬇⬇⬇ Main Page Content -->
-    <h1>Ms. Hall | Web Dev 2024-2025</h1>
+    <h1 id="title">Cooking by Mauricio Rubinstein</h1>
     <div class="parallax"></div>
 
     <div class="textblock parent-flex">
       <div class="child-flex para-1">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-          faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
-          pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
-          tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-          Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
-          hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent
-          per conubia nostra inceptos himenaeos.
+        <p id="brief">
+          Mauricio Rubinstein is a New York City based DP who has an affinity
+          and talent for cooking. The kitchen is his homebase and favorite place
+          to be. Explore to learn about his cooking history, some of his
+          signature recipes and most flavorful creations.
         </p>
       </div>
-      <div class="child-flex">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-          faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
-          pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
-          tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-          Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
-          hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent
-          per conubia nostra inceptos himenaeos.
-        </p>
+      <div class="child-flex test">
+        <img
+          id="cover"
+          src="https://cdn.glitch.global/2d8714f2-3a02-4d41-8e99-b4bb7d6f29dd/ce67fa36-ef6a-474b-a913-72fa5f65bedd.JPG?v=1747931246357"
+          width="400"
+        />
       </div>
     </div>
   </body>
